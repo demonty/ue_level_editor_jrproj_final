@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dx">
+      <UniqueIdentifier>{76c8292e-169c-441d-bbd0-d8401efb0269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\props">
+      <UniqueIdentifier>{dc2f3ed6-a467-466d-baa5-31dceeafe2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
+      <UniqueIdentifier>{1eb64665-10a6-4ff5-9e9f-743df751b8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui\controls">
+      <UniqueIdentifier>{63821612-e500-4dc9-9170-24603ad6a3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\serial">
+      <UniqueIdentifier>{3b24bf08-d045-4545-a3d8-5d09666c0c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\dx">
+      <UniqueIdentifier>{8441e49a-bb50-4c7e-a83f-d1826e62dd75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\props">
+      <UniqueIdentifier>{f9530be5-d840-4741-8add-7ad8df62a495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui">
+      <UniqueIdentifier>{1ba9f137-45bf-4e55-b4be-2a3214630433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui\controls">
+      <UniqueIdentifier>{361c4508-deba-4173-aed3-d45256d940a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\serial">
+      <UniqueIdentifier>{bb194f94-9749-43ac-887e-227efbf792a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NavGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="appstats.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="dxapp.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="dxcamera.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="dxinput.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="dxutil.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex.cpp">
+      <Filter>Source Files\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="CShader.cpp">
+      <Filter>Source Files\props</Filter>
+    </ClCompile>
+    <ClCompile Include="prop.cpp">
+      <Filter>Source Files\props</Filter>
+    </ClCompile>
+    <ClCompile Include="prop_mgr.cpp">
+      <Filter>Source Files\props</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\dxsprite.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\managerbase.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uee_statusbar.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uee_toolbar.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uee_topmenu.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uee_utilbar.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uimanager.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\button.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\checkbox.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\control.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\label.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\listbox.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\listitem.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\scrollbar.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\textbox.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\base_controls\window.cpp">
+      <Filter>Source Files\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\BinaryDeserializer.cpp">
+      <Filter>Source Files\serial</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\BinarySerializer.cpp">
+      <Filter>Source Files\serial</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\BinarySize.cpp">
+      <Filter>Source Files\serial</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EntityResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NavGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="appStats.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="dxApp.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="dxCamera.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="dxInput.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="dxUtil.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="dxVertex.h">
+      <Filter>Header Files\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="CShader.h">
+      <Filter>Header Files\props</Filter>
+    </ClInclude>
+    <ClInclude Include="prop.h">
+      <Filter>Header Files\props</Filter>
+    </ClInclude>
+    <ClInclude Include="prop_mgr.h">
+      <Filter>Header Files\props</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\dxSprite.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ueeStatusBar.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ueeToolBar.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ueeTopMenu.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ueeUtilBar.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uiManager.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uiMgrBase.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiButton.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiCheckBox.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiControl.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiLabel.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiListBox.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiListItem.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiScrollBar.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiTextBox.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\base_controls\uiWindow.h">
+      <Filter>Header Files\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\BinaryDeserializer.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\BinarySerializer.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\BinarySerialSize.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\Deserializer.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\serial_util.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\Serializable.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\Serializer.h">
+      <Filter>Header Files\serial</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

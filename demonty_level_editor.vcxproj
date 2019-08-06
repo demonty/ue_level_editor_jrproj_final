@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A86601B-3570-4C99-82D0-8DEE76646182}</ProjectGuid>
+    <RootNamespace>demonty_level_editor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.22823.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="appstats.cpp" />
+    <ClCompile Include="CShader.cpp" />
+    <ClCompile Include="dxapp.cpp" />
+    <ClCompile Include="dxcamera.cpp" />
+    <ClCompile Include="dxinput.cpp" />
+    <ClCompile Include="dxmain.cpp" />
+    <ClCompile Include="dxutil.cpp" />
+    <ClCompile Include="EntityResource.cpp" />
+    <ClCompile Include="NavGraph.cpp" />
+    <ClCompile Include="prop.cpp" />
+    <ClCompile Include="prop_mgr.cpp" />
+    <ClCompile Include="serial\BinaryDeserializer.cpp" />
+    <ClCompile Include="serial\BinarySerializer.cpp" />
+    <ClCompile Include="serial\BinarySize.cpp" />
+    <ClCompile Include="ui\base_controls\button.cpp" />
+    <ClCompile Include="ui\base_controls\checkbox.cpp" />
+    <ClCompile Include="ui\base_controls\control.cpp" />
+    <ClCompile Include="ui\base_controls\label.cpp" />
+    <ClCompile Include="ui\base_controls\listbox.cpp" />
+    <ClCompile Include="ui\base_controls\listitem.cpp" />
+    <ClCompile Include="ui\base_controls\scrollbar.cpp" />
+    <ClCompile Include="ui\base_controls\textbox.cpp" />
+    <ClCompile Include="ui\base_controls\window.cpp" />
+    <ClCompile Include="ui\dxsprite.cpp" />
+    <ClCompile Include="ui\managerbase.cpp" />
+    <ClCompile Include="ui\uee_statusbar.cpp" />
+    <ClCompile Include="ui\uee_toolbar.cpp" />
+    <ClCompile Include="ui\uee_topmenu.cpp" />
+    <ClCompile Include="ui\uee_utilbar.cpp" />
+    <ClCompile Include="ui\uimanager.cpp" />
+    <ClCompile Include="vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="appStats.h" />
+    <ClInclude Include="CShader.h" />
+    <ClInclude Include="dxApp.h" />
+    <ClInclude Include="dxCamera.h" />
+    <ClInclude Include="dxInput.h" />
+    <ClInclude Include="dxUtil.h" />
+    <ClInclude Include="dxVertex.h" />
+    <ClInclude Include="EntityResource.h" />
+    <ClInclude Include="NavGraph.h" />
+    <ClInclude Include="prop.h" />
+    <ClInclude Include="prop_mgr.h" />
+    <ClInclude Include="serial\BinaryDeserializer.h" />
+    <ClInclude Include="serial\BinarySerializer.h" />
+    <ClInclude Include="serial\BinarySerialSize.h" />
+    <ClInclude Include="serial\Deserializer.h" />
+    <ClInclude Include="serial\Serializable.h" />
+    <ClInclude Include="serial\Serializer.h" />
+    <ClInclude Include="serial\serial_util.h" />
+    <ClInclude Include="ui\base_controls\uiButton.h" />
+    <ClInclude Include="ui\base_controls\uiCheckBox.h" />
+    <ClInclude Include="ui\base_controls\uiControl.h" />
+    <ClInclude Include="ui\base_controls\uiLabel.h" />
+    <ClInclude Include="ui\base_controls\uiListBox.h" />
+    <ClInclude Include="ui\base_controls\uiListItem.h" />
+    <ClInclude Include="ui\base_controls\uiScrollBar.h" />
+    <ClInclude Include="ui\base_controls\uiTextBox.h" />
+    <ClInclude Include="ui\base_controls\uiWindow.h" />
+    <ClInclude Include="ui\dxSprite.h" />
+    <ClInclude Include="ui\ueeStatusBar.h" />
+    <ClInclude Include="ui\ueeToolBar.h" />
+    <ClInclude Include="ui\ueeTopMenu.h" />
+    <ClInclude Include="ui\ueeUtilBar.h" />
+    <ClInclude Include="ui\uiManager.h" />
+    <ClInclude Include="ui\uiMgrBase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
